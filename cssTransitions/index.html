@@ -6,12 +6,21 @@
         <style>
             #container {
                 width: 100%;
-                height: 250px;
+                height: 400px;
                 background-color: #9ad3de;
 
                 display: flex;
                 align-items: center;
                 justify-content: center;
+            }
+        /*CSS transition that scales & rotates img when user hovers*/
+            #hexagon:hover {
+                transform: scale3d(1.5, 1.5, 1) rotate(45deg);
+            }
+
+            #hexagon {
+                transition-property: transform;
+                transition-duration: .2s;
             }
         </style>
     </head>
@@ -22,7 +31,7 @@
         </div>
 
     </body>
-    
+
     <!--Script for img change when mouse hovers-->
     <script>
         function hover(element) {
